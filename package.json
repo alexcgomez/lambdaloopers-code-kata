@@ -1,0 +1,19 @@
+{
+  "name": "lambdaloopers-code-kata",
+  "version": "1.0.0",
+  "description": "Alba and Alex - Pair programming kata",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexcgomez/lambdaloopers-code-kata.git"
+  },
+  "author": "Alba Talaya & Alex Cáceres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexcgomez/lambdaloopers-code-kata/issues"
+  },
+  "homepage": "https://github.com/alexcgomez/lambdaloopers-code-kata#readme"
+}
