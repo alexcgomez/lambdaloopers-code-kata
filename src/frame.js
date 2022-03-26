@@ -1,4 +1,4 @@
-class Frame  {
+class Frame {
     rolls;
     spare;
     strike;
@@ -10,7 +10,10 @@ class Frame  {
     }
 
     update(pins) {
-        return this.rolls.push(pins);
+        this.rolls.push(pins)
+        if (this.rolls.reduce((acc, roll) => acc + roll, 0) === 10) {
+            this.spare = true
+        }
     }
 
     isCompleted() {
