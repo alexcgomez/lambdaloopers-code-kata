@@ -1,9 +1,13 @@
 class Game {
-    
     currentScore;
-    constructor(){}
 
-    roll(pins){
-        currentScore += pins;
+    constructor() {
+        this.currentScore = 0;
+    }
+
+    roll(pins) {
+        this.currentScore += pins;
     }
 }
+
+module.exports = Game;
