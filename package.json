@@ -4,7 +4,7 @@
   "description": "Alba and Alex - Pair programming kata",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
