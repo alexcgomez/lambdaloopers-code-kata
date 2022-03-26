@@ -2,26 +2,29 @@ const Game = require('../src/game')
 
 
 describe('Game', () => {
-
     let game;
-
     beforeEach(() => {
         game = new Game();
-        jest.setMock()
     })
 
-    test('current score should be the sum of the accumulated rolls', () => {
-        const expectedCurrentScore = 5;
+    test('current score should be the sum of the accumulated frames', () => {
+        const expectedCurrentScore = 2;
         game.roll(2);
         game.roll(0);
         game.roll(3);
-        expect(game.currentScore).toBe(expectedCurrentScore);
+        expect(game.score()).toBe(expectedCurrentScore);
     })
 
     test('score method should return the current score', () => {
-        const expectedTotalScore = 8;
-        game.roll(5);
-        game.roll(3);
+        const expectedTotalScore =  6;
+        game.roll(1);
+        game.roll(2);
+
+        game.roll(1);
+        game.roll(2);
+
+        game.roll(1);
+
         expect(game.score()).toBe(expectedTotalScore)
     })
 

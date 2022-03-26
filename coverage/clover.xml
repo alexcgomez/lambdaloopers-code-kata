@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1648298211731" clover="3.2.0">
-  <project timestamp="1648298211731" name="All files">
-    <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3" elements="13" coveredelements="13" complexity="0" loc="8" ncloc="8" packages="1" files="1" classes="1"/>
+<coverage generated="1648304134131" clover="3.2.0">
+  <project timestamp="1648304134131" name="All files">
+    <metrics statements="15" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="4" elements="23" coveredelements="19" complexity="0" loc="15" ncloc="15" packages="1" files="2" classes="2"/>
     <file name="game.js" path="/home/alex/Personal/Learning/Dojo/lambdaloopers-code-kata/src/game.js">
-      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
-      <line num="6" count="3" type="stmt"/>
-      <line num="7" count="3" type="stmt"/>
-      <line num="11" count="7" type="cond" truecount="2" falsecount="0"/>
-      <line num="12" count="3" type="stmt"/>
-      <line num="14" count="4" type="stmt"/>
-      <line num="16" count="7" type="stmt"/>
-      <line num="20" count="1" type="stmt"/>
-      <line num="24" count="1" type="stmt"/>
+      <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="9" count="3" type="stmt"/>
+      <line num="10" count="3" type="stmt"/>
+      <line num="11" count="3" type="stmt"/>
+      <line num="15" count="8" type="stmt"/>
+      <line num="16" count="8" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="3" type="stmt"/>
+      <line num="18" count="3" type="stmt"/>
+      <line num="20" count="5" type="stmt"/>
+      <line num="24" count="2" type="stmt"/>
+      <line num="28" count="1" type="stmt"/>
+    </file>
+    <file name="score.js" path="/home/alex/Personal/Learning/Dojo/lambdaloopers-code-kata/src/score.js">
+      <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+      <line num="5" count="3" type="stmt"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="13" count="0" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

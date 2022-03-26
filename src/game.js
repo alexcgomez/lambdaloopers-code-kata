@@ -1,26 +1,29 @@
+const Score = require("./score");
+const Frame = require("./frame");
+
 class Game {
     currentScore;
     currentFrame;
-    spare;
+    history;
 
     constructor() {
-        this.currentScore = 0;
-        this.currentFrame = 1;
-        this.spare = false;
+        this.currentScore = new Score();
+        this.currentFrame = new Frame();
+        this.history = []
     }
 
     roll(pins) {
-        if (this.currentFrame === 2) {
-            this.currentFrame = 1;
-        } else {
-            this.currentFrame += 1;
+        if (this.currentFrame.isCompleted()) {
+            this.history.push(this.currentFrame);
+            this.currentFrame = new Frame();
+            this.currentScore.updateScore(this.history);
+            return;
         }
-
-        this.currentScore += pins;
+        this.currentFrame.update(pins);
     }
 
     score() {
-        return this.currentScore;
+        return this.currentScore.score;
     }
 }
 
