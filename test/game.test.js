@@ -29,10 +29,13 @@ describe('Game', () => {
     })
 
     test('should accumulate next roll score if spare',  () => {
-        const expectedCurrentScore = 26;
+        const expectedCurrentScore = 20;
         game.roll(2);
         game.roll(8);
+
+        game.roll(1);
         game.roll(8);
+
         expect(game.score()).toBe(expectedCurrentScore)
     })
 
