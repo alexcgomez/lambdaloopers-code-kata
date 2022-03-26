@@ -14,10 +14,10 @@ class Frame {
             this.strike = true;
             return this.rolls = [10, 0];
         }
-        if (this.rolls.length > 1 && this.rolls.reduce((acc, roll) => acc + roll, 0) === 10) {
+        this.rolls.push(pins)
+        if (this.rolls[0] + this.rolls[1] === 10) {
             this.spare = true
         }
-        this.rolls.push(pins)
     }
 
     isCompleted() {
